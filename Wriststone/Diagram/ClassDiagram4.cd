@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Wriststone.Models.ViewModel.AccountPostModel">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Models\ViewModel\AccountPostModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wriststone.Models.ViewModel.AccountRatingModel">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAEA=</HashCode>
+      <FileName>Models\ViewModel\AccountRatingModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wriststone.Models.ViewModel.CategoryProductsModel">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Models\ViewModel\CategoryProductsModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wriststone.Models.ViewModel.CategoryThreadsModel">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAEAAAAAAAAAAACAA=</HashCode>
+      <FileName>Models\ViewModel\CategoryThreadsModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wriststone.Models.ViewModel.CreatorThreadModel">
+    <Position X="2.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\ViewModel\CreatorThreadModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wriststone.Models.ViewModel.ProductModel">
+    <Position X="4" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAACAAAAAAAAAAAAAgAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\ViewModel\ProductModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wriststone.Models.ViewModel.ThreadPostsModel">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAABAAAAAAACAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Models\ViewModel\ThreadPostsModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Layout.cshtml";
+}
+@model Wriststone.Models.ViewModel.CreatorThreadModel
+    <div class="thread">
+        <form method="post" action="/Forum/Edit">
+            <input type="hidden" name="thread" value="@Model.Thread.Id">
+            <input type="hidden" name="post" value="@Model.Post.Id">
+            <input type="text" name="subject" placeholder="Create thread name." value="@Model.Thread.Subject" required>
+            <textarea name="context" cols="50" placeholder="Write a context" rows="5" required>@Model.Post.Context</textarea>
+            <input type="submit" value="Edit">
+            <button type="button" onclick="window.location='/Forum/Thread/@Model.Thread.Id'">Cancel</button>
+        </form>
+    </div>
+

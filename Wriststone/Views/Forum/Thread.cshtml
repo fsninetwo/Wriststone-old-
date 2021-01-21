@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "Thread";
+    Layout = "~/Views/Layout.cshtml";
+}
+@model Wriststone.Models.ViewModel.ThreadPostsModel
+
+
+    <div class="thread_list">
+        <h2>@Model.Thread.Subject</h2>
+        @if (Convert.ToInt64(Session["id"]) == Model.Creator.Id)
+        {
+            <form method="get" action="/Forum/Edit">
+                <input type="hidden" name="thread" value="@Model.Thread.Id">
+                <input type="hidden" name="post" value="@Model.Post">
+                <input type="submit" value="Edit Thread">
+            </form>
+        }
+        @foreach (var item in Model.Posts)
+        {
+            <div class="post">
+                <div class="created">@item.Post.Created</div>
+                <div class="profile"><a href="/Profile/Profile/@item.Account.Id">@item.Account.Login</a></div>
+                <div class="context">@item.Post.Context</div>
+            </div>
+        }
+        @if (Session["id"] != null)
+        {
+            <form method="post" action="/Forum/Post">
+                <input type="hidden" name="thread" value="@Model.Thread.Id">
+                <textarea name="context" rows="5" required></textarea>
+                <input type="submit" value="Post">
+            </form>
+        }
+    </div>
+
+

@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "SignUp";
+    Layout = "~/Views/Layout.cshtml";
+}
+@model Uri
+<div class="log">
+    <h1>Sign Up</h1>
+    <p>Please fill in this form to enter account.</p>
+    <form method="post" action="/Profile/SignUp">
+        @if (ViewData["error"] != null)
+        {
+            <span>@ViewData["error"]</span>
+        }
+        <input type="hidden" name="redirect" value="@Model" />
+        <input type="text" placeholder="Enter Login" name="login" required>
+        <input type="password" placeholder="Enter Password" name="password" required>
+        <label>
+            <input type="checkbox" checked="checked" name="remember" value="true" style="margin-bottom:15px"> Remember me
+        </label>
+        <a href="/Profile/Recovery">Remember Password</a>
+        <input type="submit" value="Sign Up">
+    </form>
+    <form action="/Profile/Register">
+        <input type="submit" value="Register">
+    </form>
+</div>
+

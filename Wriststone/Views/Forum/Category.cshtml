@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Category";
+    Layout = "~/Views/Layout.cshtml";
+}
+@model Wriststone.Models.ViewModel.CategoryThreadsModel
+    <div class="list">
+        @if (Session["id"] != null)
+        {
+            <button type="button" onclick="window.location='/Forum/Create/@Model.Category.Id'">Create new Thread</button>
+        }
+
+        @if (Model.Categories.Count() > 0)
+        {
+
+            <h2>Categories</h2>
+            <ul>
+                @foreach (var item in Model.Categories)
+                {
+                    <li><a href="/Forum/Category/@item.Id">@item.Name</a></li>
+                }
+            </ul>
+        }
+
+        <h2>Threads</h2>
+        <ul>
+            @foreach (var item in Model.Threads)
+            {
+                <li><a href="/Forum/Thread/@item.Id">@item.Subject</a></li>
+            }
+        </ul>
+    </div>

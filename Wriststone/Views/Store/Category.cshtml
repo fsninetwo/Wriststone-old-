@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Category";
+    Layout = "~/Views/Layout.cshtml";
+}
+@model Wriststone.Models.ViewModel.CategoryProductsModel
+
+    <div class="list">
+        @if (Model.Categories.Count() > 0)
+        {
+            <h2>Categories</h2>
+            <ul>
+                @foreach (var item in Model.Categories)
+                {
+                    <li><a href="/Store/Category/@item.Id">@item.Name</a></li>
+                }
+            </ul>
+        }
+        <h2>Products</h2>
+        <ul>
+            @foreach (var item in Model.Products)
+            {
+                <li><a href="/Store/Product/@item.Id">@item.Name</a></li>
+            }
+        </ul>
+    </div>

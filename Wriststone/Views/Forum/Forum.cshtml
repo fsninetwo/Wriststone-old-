@@ -1,0 +1,15 @@
+﻿@{
+    Layout = "~/Views/Layout.cshtml";
+    ViewBag.Title = "Forum";
+}
+@model IEnumerable<Wriststone.Models.Table.ForumCategory>
+
+<div class="list">
+    <h2>Categories</h2>
+    <ul>
+        @foreach (var item in Model)
+        {
+            <li><a href="/Forum/Category/@item.Id">@item.Name</a></li>
+        }
+    </ul>
+</div>

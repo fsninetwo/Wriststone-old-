@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Layout.cshtml";
+    var regex = "[\\w]+@[\\w]+\\.[\\w]+";
+}
+
+<div class="log">
+    <h1>Register</h1>
+    <p>Please fill in this form to create an account.</p>
+    <form method="post" action="/Profile/Register">
+        @if (ViewData["error"] != null)
+        {
+            <span>@ViewData["error"]</span>
+        }
+        <input type="text" placeholder="Enter login" name="login" required>
+        <input type="text" placeholder="Enter email" name="email" pattern="@regex" required>
+        <input type="password" placeholder="Enter password" name="password" required>
+        <input type="text" placeholder="Enter fullname" name="fullname">
+        <input type="submit" value="Register" />
+    </form>
+</div>
+

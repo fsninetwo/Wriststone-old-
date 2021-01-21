@@ -1,0 +1,57 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="/Content/css/styles.css" type="text/css">
+</head>
+<body>
+    <div id="wrapper">
+        <nav>
+            <div class="top">
+                <ul>
+                    <li><a href="/">Store</a></li>
+                    <li><a href="/Forum/Forum">Forum</a></li>
+                    <li><button type="button" onclick="window.location='/Cart/Cart'">Cart</button></li>
+                    @if (Session["id"] != null)
+                    {
+                        <li>
+                            <button type="button" onclick="window.location='/Profile/Profile/@Session["id"]'">@Session["login"]</button>
+                            <button type="button" onclick="window.location='/Profile/Logout'">Logout</button>
+                        </li>
+                    }
+                    else
+                    {
+                        <li><button type="button" onclick="window.location='/Profile/SignUp'">Sign Up</button></li>
+                    }
+                    <li>
+                        <form method="post" class="search" action="Search">
+                            <input type="text" placeholder="Search" name="search">
+                            <button type="submit">Go</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        @RenderBody()
+    </div>
+    <footer>
+        <div id="footer">
+            <div id="sitemap">
+                <h3>SITEMAP</h3>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/About">About</a></li>
+                    <li><a href="/Services">Services</a></li>
+                    <li><a href="/Partners">Partners</a></li>
+                    <li><a href="/Support">Support</a></li>
+                    <li><a href="/Contact">Contact</a></li>
+                </ul>
+            </div>
+            <div id="footer-logo">
+                <p>Copyright © @DateTime.Now.Year.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,74 @@
+﻿@{
+    ViewBag.Title = "Product";
+    Layout = "~/Views/Layout.cshtml";
+}
+
+@model Wriststone.Models.ViewModel.ProductModel
+        <div class="list">
+            <h2>@Model.Product.Name</h2>
+            <ul>
+                <li>Description: @Model.Product.Description</li>
+                <li>Rating: @Model.Rate</li>
+                <li>Rublisher: @Model.Product.Publisher </li>
+                <li>Developer: @Model.Product.Developer </li>
+                @if (Model.Product.Price > 0)
+                {
+                    <li>Price: @Model.Product.Price$</li>
+                }
+                else
+                {
+                    <li>Free</li>
+                }
+            </ul>
+        </div>
+        @if (Session["id"] != null)
+        {
+            <div class="buy">
+                @if (Model.Bought == false)
+                {
+                    if (Model.Product.Price > 0)
+                    {
+                        <button type="button" onclick="window.location='/Store/Cart/@Model.Product.Id'">Add to cart</button>
+                    }
+                    else
+                    {
+                        <form method="post" action="/Cart/FreeProduct">
+                            <input type="hidden" name="id" value="@Model.Product.Id">
+                            <input type="submit" value="Buy for free" />
+                        </form>
+                    }
+                }
+                else
+                {
+                    <strong>This product is already bought!</strong>
+                }
+            </div>
+            <div class="rate">
+                <form class="rank" method="post" action="/Store/Rate">
+                    <input type="hidden" name="product" value="@Model.Product.Id">
+                    <input type="range" min="1" max="10" name="rank" required />
+                    <input type="submit" value="Rank" />
+                </form>
+                <form class="comment" method="post" action="/Store/Comment">
+                    <input type="hidden" name="product" value="@Model.Product.Id">
+                    <textarea name="comment" cols="70" rows="7" required></textarea>
+                    <input type="submit" value="Send" />
+                </form>
+            </div>
+        }
+
+        <h2>Ratings</h2>
+        @if (Model.Ratings.Count() > 0)
+        {
+            foreach (var item in Model.Ratings)
+            {
+                <div class="list">
+                    <h2><a href="/Profile/Profile/@item.Account.Id">@item.Account.Login</a></h2>
+                    <ul>
+                        <li>Rank: @item.Rating.Rate</li>
+                        <li>Message: @item.Rating.Message</li>
+                    </ul>
+                </div>
+            }
+        }
+

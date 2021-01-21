@@ -1,0 +1,23 @@
+﻿@{
+    Layout = "~/Views/Layout.cshtml";
+    ViewBag.Title = "Profile";
+}
+
+@model Wriststone.Models.Table.Account
+
+<div class="profile_menu">
+    <ul>
+        <li class="active"><a>Profile</a></li>
+        <li><a href="/Profile/Products">Products</a></li>
+        <li><button type="button" onclick="window.location='/Profile/Edit'">Edit profile</button></li>
+    </ul>
+</div>
+
+<div class="list">
+    <h2>@Model.Login</h2>
+    <ul>
+        <li>Full Name: @Model.Fullname</li>
+        <li>Email: @Model.Email</li>
+        <li>Created: @Model.Created.Date</li>
+    </ul>
+</div>

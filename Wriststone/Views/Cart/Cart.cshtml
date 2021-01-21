@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "Cart";
+    Layout = "~/Views/Layout.cshtml";
+    var cart = (List<Wriststone.Models.Table.Product>)Session["cart"];
+    string total = "";
+    try
+    {
+        total = String.Format("{0}", cart.Sum(e => e.Price));
+    } catch (ArgumentNullException) { }
+}
+
+@if (Session["cart"] != null)
+{
+    <div class="list">
+        <h2>Your order</h2>
+        <ul>
+            @foreach (var item in (List<Wriststone.Models.Table.Product>)Session["cart"])
+            {
+                <li>
+                    @item.Name, @item.Price$
+                    <form method="post" class="cart" action="/Cart/Delete">
+                        <input type="hidden" name="id" value="@item.Id">
+                        <input type="submit" value="Delete" />
+                    </form>
+                </li>
+            }
+            <li> Overall price: @total$ </li>
+        </ul>
+        <button type="button" class="cart" onclick="window.location='/Cart/PaymentWithPaypal'">Purchase with Paypal</button>
+    </div>
+    
+}
+else
+{
+    <div class="list">
+        <h2>You have no products in order</h2>
+    </div>
+}
+
+

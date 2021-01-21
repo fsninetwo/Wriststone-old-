@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Wriststone.Models.Table.Account">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAICAAAEACAAAAAAAAAAAAAAAAAAAAQCAAAQAAAAAAA=</HashCode>
+      <FileName>Models\Table\Account.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wriststone.Models.Table.ForumCategory">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Models\Table\ForumCategory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wriststone.Models.Table.Order">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAQAAAAAAAIAAAAAAAAAAAAABAAAAAAAAAEA=</HashCode>
+      <FileName>Models\Table\Order.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wriststone.Models.Table.OrderDetails">
+    <Position X="0.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAECAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Table\OrderDetails.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wriststone.Models.Table.Post">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAEAwAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAEA=</HashCode>
+      <FileName>Models\Table\Post.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wriststone.Models.Table.Product">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAQAgAAAACAAAAAQAAIAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Models\Table\Product.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wriststone.Models.Table.ProductCategory">
+    <Position X="5.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Models\Table\ProductCategory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wriststone.Models.Table.Rating">
+    <Position X="4" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAEA=</HashCode>
+      <FileName>Models\Table\Rating.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wriststone.Models.Table.Thread">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAEAAAAAAAAAIAAAAAAAAAAAAQAAAAAAAAACEA=</HashCode>
+      <FileName>Models\Table\Thread.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
