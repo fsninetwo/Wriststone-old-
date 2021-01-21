@@ -1,0 +1,460 @@
+body {
+	color: #ffffff;
+	font: 12px Tahoma, sans-serif;
+	background-color: #202020;
+	background-image: url(images/space.jpg);
+	border-top: 5px solid #002c50;
+	margin: 0;
+}
+
+p {
+	margin: 20px 0;
+}
+
+#wrapper {
+	margin: 10%;
+}
+
+figure figcaption {
+	font-size: 16px;
+	font-weight: 300;
+	margin-top: 5px;
+}
+
+figure div {
+	font-size: 14px;
+	color: #2965e6;
+}
+
+.team-row figure {
+	margin-top: 20px;
+}
+
+.team-row figure + figure {
+	margin-left: 43px;
+}
+
+footer {
+	background: #7e7e7e;
+	color: #dbdbdb;
+	font-size: 11px;
+}
+
+#footer {
+	max-width: 960px;
+	margin: auto;
+	padding: 10px 0;
+	height: 60px;
+}
+
+footer h3 {
+	font: 14px 'Oswald', sans-serif;
+	color: #fff;
+	border-bottom: 1px solid #919191;
+	margin: 0 0 10px 0;
+}
+
+#twitter time {
+	color: #b4aeae;
+}
+
+footer p {
+	margin: 5px 0;
+}
+
+footer a {
+	color: #dbdbdb;
+}
+
+#sitemap {
+	width: 400px;
+	float: left;
+	margin: auto;
+	padding-right: 15px;
+}
+
+#sitemap ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#sitemap li {
+    float: left;
+    padding: 5px;
+}
+
+#sitemap div {
+	display: inline-block;
+}
+
+#sitemap a {
+	display: block;
+	text-decoration: none;
+	font-size: 12px;
+	margin-bottom: 5px;
+}
+
+#footer-logo {
+	float: right;
+	margin-top: 20px;
+	font-size: 10px;
+	text-align: right;
+}
+
+.top ul {
+	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	overflow: hidden;
+  	background-color: #333;
+}
+
+.top li {
+	float: left;
+}
+
+.top li:nth-last-child(-n+3) {
+    float: right;
+    padding: 5px;
+}
+
+.top li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+  
+.top li.active {
+	background: #2965e6;
+	color: #fff;
+}
+
+.top li a:hover {
+	display: inline-block;
+	background-color: #2965e6;
+	color: #fff;
+}
+
+.top form.search [type="text"] {
+	background-color: #f3f3f3;
+	border: 1px solid #e7e7e7;
+	height: 28px;
+	color: #b2b2b2;
+	padding: 0 5px;
+	vertical-align: top;
+}
+
+.top button {
+    color: #fff;
+    background-color: #2965e6;
+    border: none;
+    height: 30px;
+}
+
+.log {
+    background-color: #333;
+    margin: 20px 30%;
+    padding: 20px 20px;
+}
+
+.log [type="text"],[type="password"],[type="email"] {
+    width: 100%;
+    background-color: #f3f3f3;
+    border: 1px solid #e7e7e7;
+    height: 30px;
+    color: #b2b2b2;
+    padding: 10px 10px;
+    vertical-align: top;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.log [type="submit"] {
+    width: 100%;
+    color: #fff;
+    background-color: #2965e6;
+    border: none;
+    height: 30px;
+    margin: 8px 0;
+}
+
+.log span {
+    color: red;
+}
+
+.list a {
+    color: white;
+    text-decoration: none;
+}
+
+.list h2 {
+    background: #2965e6;
+    font-weight: 300;
+    color: #fff;
+    padding: 0 10px;
+    margin: 30px 0 0 0;
+}
+
+.list ul {
+	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+.list li {
+	padding: 14px 16px;
+}
+
+.list li a {
+	color: white;
+	text-decoration: none;
+}
+
+.list li a:hover {
+	display: inline-block;
+	background-color: #2965e6;
+	color: #fff;
+}
+
+.list button {
+    width: 100%;
+    color: #fff;
+    background-color: #2965e6;
+    border: none;
+    height: 30px;
+}
+
+.list form.cart {
+    float: right;
+}
+
+.list [type="submit"] {
+    color: #fff;
+    background-color: #2965e6;
+    border: none;
+    height: 30px;
+}
+
+.profile_menu ul {
+    list-style-type: none;
+    margin: 10px 0 0 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.profile_menu li {
+    float: left;
+}
+
+.profile_menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+
+.profile_menu li.active {
+    background: #2965e6;
+    color: #fff;
+}
+
+.profile_menu li a:hover {
+    display: inline-block;
+    background-color: #2965e6;
+    color: #fff;
+}
+
+.profile_menu button {
+    color: #fff;
+    background-color: #2965e6;
+    border: none;
+    height: 20px;
+}
+
+.profile_menu li:nth-last-child(-n+1) {
+    float: right;
+    padding: 5px;
+}
+
+.thread_list {
+    width: 100%;  
+}
+
+.thread_list h2 {
+    background: #333;
+    color: #fff;
+    padding: 0 10px;
+    margin: 10px 0;
+}
+
+.thread_list .post {
+    margin: 10px 0;
+    background-color: #333;
+}
+
+.thread_list .created {
+    padding: 2px 5px;
+    width: 100%;
+}
+
+.thread_list .profile {
+    padding: 10px 10px;
+    width: 15%;
+    margin: 0;
+    float: left;
+}
+
+.thread_list .profile a{
+    color: white;
+	text-decoration: none;
+}
+
+.thread_list .context {
+    padding: 10px 10px;
+    width: 100%;
+}
+
+.thread_list textarea {
+    width: 100%;
+    font: 12px Tahoma, sans-serif;
+    background-color: #f3f3f3;
+    border: 1px solid #e7e7e7;
+    vertical-align: top;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.thread_list [type="submit"] {
+    width: 100%;
+    color: #fff;
+    background-color: #2965e6;
+    border: none;
+    height: 30px;
+}
+
+.thread [type="text"] {
+    width: 100%;
+    background-color: #f3f3f3;
+    border: 1px solid #e7e7e7;
+    height: 30px;
+    padding: 10px 10px;
+    vertical-align: top;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.thread textarea {
+    width: 100%;
+    font: 12px Tahoma, sans-serif;
+    background-color: #f3f3f3;
+    border: 1px solid #e7e7e7;
+    vertical-align: top;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.thread [type="submit"] {
+    float: left;
+    width: 50%;
+    color: #fff;
+    background-color: #2965e6;
+    border: none;
+    height: 30px;
+    margin: 5px 0 5px 0;
+}
+
+.thread button {
+    float: left;
+    width: 49.5%;
+    color: #fff;
+    background-color: #2965e6;
+    border: none;
+    height: 30px;
+    margin: 5px 0 0 5px;
+}
+
+.rate {
+    background-color: #333;
+    width: 100%;
+}
+
+.rate form.comment {
+    width: 59.5%;
+    margin: 0 0 0 5px;
+    display: inline-block;
+}
+
+.rate form.comment [type="submit"] {
+    width: 100%;
+    color: #fff;
+    background-color: #2965e6;
+    border: none;
+    height: 30px;
+    margin: 5px 0 5px 0;
+}
+
+.rate form.comment textarea {
+    width: 100%;
+    font: 12px Tahoma, sans-serif;
+    background-color: #f3f3f3;
+    border: 1px solid #e7e7e7;
+    vertical-align: top;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.rate form.rank {
+    float: left;
+    width: 40%;    
+    margin: 104px 0 0 0;
+}
+
+.rate form.rank [type="submit"] {
+    width: 100%;
+    color: #fff;
+    background-color: #2965e6;
+    border: none;
+    height: 30px;
+    margin: 5px 0 5px 0;
+}
+
+.rate form.rank [type="range"] {
+    width: 100%;
+    margin: 0 0 0 -1px;
+    height: 25px;
+    background: #fff;
+    outline: none;
+}
+
+.buy {
+    margin: 20px 0;
+    padding: 10px;
+    background: #333;
+}
+
+.buy [type="submit"] {
+    width: 100%;
+    color: #fff;
+    background-color: #2965e6;
+    border: none;
+    height: 30px;
+    margin: 5px 0 5px 0;
+}
+
+.buy button {
+    width: 100%;
+    color: #fff;
+    background-color: #2965e6;
+    border: none;
+    height: 30px;
+    margin: 5px 0 0 5px;
+}
+
+
